@@ -1,0 +1,4 @@
+.metadata
+*.xdsl
+.DS_Store
+bin

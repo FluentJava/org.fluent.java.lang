@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libs/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/groovy-all-2.0.7.jar"/>
+	<classpathentry kind="lib" path="libs/groovy-eclipse.jar"/>
+	<classpathentry kind="lib" path="libs/junit.jar"/>
+	<classpathentry kind="lib" path="libs/org.apache.log4j_1.2.15.v201012070815.jar"/>
+	<classpathentry kind="lib" path="libs/org.codehaus.groovy.eclipse.ui_2.8.0.xx-20130703-1500-e37-RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.jdt.groovy.core_2.8.0.xx-20130703-1500-e37-RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/org.eclipse.swtbot.swt.finder_2.1.2.201311041021.jar"/>
+	<classpathentry kind="lib" path="libs/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+	<classpathentry kind="lib" path="libs/org.hamcrest.library_1.3.0.v201305281000.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
