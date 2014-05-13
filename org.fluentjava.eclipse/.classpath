@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="libs/org.eclipse.swtbot.swt.finder_2.1.2.201311041021.jar"/>
 	<classpathentry kind="lib" path="libs/org.hamcrest.core_1.3.0.v201303031735.jar"/>
 	<classpathentry kind="lib" path="libs/org.hamcrest.library_1.3.0.v201305281000.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.fluent.java.lang"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

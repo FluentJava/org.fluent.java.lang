@@ -18,6 +18,7 @@ public class Reflection
 	{
 		this.target = target;
 		this.clazz = target.getClass();
+		
 	}
 	
 	public <T> T invoke(Class<T> returnType, String methodName, Object ...parameters )
@@ -236,11 +237,11 @@ public class Reflection
 		List<Method> methods = Arrays.asList(clazz.getDeclaredMethods()); 				
 		return sort_by_Name(methods);
 	}
-	public Reflection inspect()
+	/*public Reflection inspect()
 	{
 		groovy.inspect.swingui.ObjectBrowser.inspect(target);
 		return this;
-	}
+	}*/
 	
 	public List<String> sort(List<String> list)
 	{

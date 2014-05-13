@@ -14,7 +14,6 @@ Export-Package: org.fluentjava.eclipse,
  tm.eclipse.swt.controls.extra,
  tm.eclipse.swt.jface,
  tm.eclipse.ui.views,
- tm.lang,
  tm.utils
 Bundle-ClassPath: libs/bsh-2.0b4.jar,
  libs/commons-io-2.4.jar,
