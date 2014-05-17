@@ -125,7 +125,7 @@
 		<url>https://github.com/FluentJava/org.fluent.java.lang/issues</url>
 	</issueManagement>
 	<scm>
-		<url>scm:git:https://github.com/FluentJava/org.fluent.java.lang</url>
+		<url>https://github.com/FluentJava/org.fluent.java.lang</url>
 	</scm>
 	<organization>
 		<name>Security Innovation</name>
