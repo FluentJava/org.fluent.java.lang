@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1400296859162" clover="3.3.0">
+   <project timestamp="1400296835820" name="org.fluent.java.lang 0.9.1-SNAPSHOT">
+      <metrics conditionals="52" methods="45" classes="5" files="4" packages="2" coveredstatements="75" complexity="81" loc="456" ncloc="368" coveredmethods="28" coveredconditionals="28" statements="143" coveredelements="131" elements="240"/>
+      <package name="tm.lang.reflect">
+         <metrics classes="2" methods="22" conditionals="40" files="2" ncloc="191" coveredstatements="51" coveredmethods="14" complexity="47" coveredconditionals="25" statements="81" loc="252" coveredelements="90" elements="143"/>
+         <file name="Method.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/main/java/tm/lang/reflect/Method.java">
+            <metrics classes="1" methods="8" conditionals="14" ncloc="72" coveredstatements="25" coveredmethods="8" complexity="18" coveredconditionals="14" statements="25" loc="112" coveredelements="47" elements="47"/>
+            <class name="Method">
+               <metrics methods="8" conditionals="14" coveredstatements="25" coveredmethods="8" complexity="18" coveredconditionals="14" statements="25" coveredelements="47" elements="47"/>
+            </class>
+            <line num="37" count="192" visibility="public" complexity="1" type="method" signature="Method(Reflection,java.lang.reflect.Method)"/>
+            <line num="39" count="192" type="stmt"/>
+            <line num="40" count="192" type="stmt"/>
+            <line num="43" count="21" visibility="public" complexity="5" type="method" signature="invoke(Object) : Object"/>
+            <line num="45" count="21" type="stmt"/>
+            <line num="45" falsecount="18" type="cond" truecount="3"/>
+            <line num="46" count="3" type="stmt"/>
+            <line num="47" count="18" type="stmt"/>
+            <line num="49" count="18" type="stmt"/>
+            <line num="50" count="18" type="stmt"/>
+            <line num="51" count="18" type="stmt"/>
+            <line num="51" falsecount="6" type="cond" truecount="12"/>
+            <line num="52" count="12" type="stmt"/>
+            <line num="54" count="6" type="stmt"/>
+            <line num="58" count="6" type="stmt"/>
+            <line num="59" count="6" type="stmt"/>
+            <line num="59" falsecount="3" type="cond" truecount="3"/>
+            <line num="60" count="3" type="stmt"/>
+            <line num="61" count="6" type="stmt"/>
+            <line num="74" count="9" visibility="public" complexity="3" type="method" signature="invoke_No_Catch(Object) : Object"/>
+            <line num="76" count="9" type="stmt"/>
+            <line num="76" falsecount="6" type="cond" truecount="3"/>
+            <line num="77" count="3" type="stmt"/>
+            <line num="78" count="6" type="stmt"/>
+            <line num="79" count="6" type="stmt"/>
+            <line num="79" falsecount="3" type="cond" truecount="3"/>
+            <line num="80" count="3" type="stmt"/>
+            <line num="82" count="3" type="stmt"/>
+            <line num="85" count="60" visibility="public" complexity="2" type="method" signature="name() : String"/>
+            <line num="87" count="60" type="stmt"/>
+            <line num="87" falsecount="6" type="cond" truecount="54"/>
+            <line num="91" count="54" visibility="public" complexity="4" type="method" signature="name(String) : boolean"/>
+            <line num="93" count="54" type="stmt"/>
+            <line num="93" falsecount="6" type="cond" truecount="48"/>
+            <line num="98" count="36" visibility="public" complexity="1" type="method" signature="isStatic() : boolean"/>
+            <line num="100" count="36" type="stmt"/>
+            <line num="102" count="6" visibility="public" complexity="1" type="method" signature="isInstance() : boolean"/>
+            <line num="104" count="6" type="stmt"/>
+            <line num="107" count="6" visibility="public" complexity="1" type="method" signature="toString() : String"/>
+            <line num="110" count="6" type="stmt"/>
+         </file>
+         <file name="Methods.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/main/java/tm/lang/reflect/Methods.java">
+            <metrics classes="1" methods="14" conditionals="26" ncloc="119" coveredstatements="26" coveredmethods="6" complexity="29" coveredconditionals="11" statements="56" loc="140" coveredelements="43" elements="96"/>
+            <class name="Methods">
+               <metrics methods="14" conditionals="26" coveredstatements="26" coveredmethods="6" complexity="29" coveredconditionals="11" statements="56" coveredelements="43" elements="96"/>
+            </class>
+            <line num="23" count="180" visibility="public" complexity="1" type="method" signature="Methods(Reflection)"/>
+            <line num="25" count="180" type="stmt"/>
+            <line num="26" count="180" type="stmt"/>
+            <line num="29" count="0" visibility="public" complexity="2" type="method" signature="declared() : List&lt;Method&gt;"/>
+            <line num="31" count="0" type="stmt"/>
+            <line num="32" count="0" type="stmt"/>
+            <line num="33" count="0" type="stmt"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="34" falsecount="0" type="cond" truecount="0"/>
+            <line num="38" count="45" visibility="public" complexity="3" type="method" signature="declared(String,Class&lt;?&gt;) : Method"/>
+            <line num="40" count="45" type="stmt"/>
+            <line num="42" count="45" type="stmt"/>
+            <line num="43" count="21" type="stmt"/>
+            <line num="43" falsecount="0" type="cond" truecount="21"/>
+            <line num="44" count="21" type="stmt"/>
+            <line num="47" count="24" type="stmt"/>
+            <line num="50" count="45" visibility="public" complexity="4" type="method" signature="declared_All(String,Class&lt;?&gt;) : Method"/>
+            <line num="52" count="45" type="stmt"/>
+            <line num="52" falsecount="45" type="cond" truecount="0"/>
+            <line num="53" count="0" type="stmt"/>
+            <line num="54" count="45" type="stmt"/>
+            <line num="55" count="45" type="stmt"/>
+            <line num="55" falsecount="24" type="cond" truecount="21"/>
+            <line num="56" count="21" type="stmt"/>
+            <line num="58" count="24" type="stmt"/>
+            <line num="59" count="24" type="stmt"/>
+            <line num="59" falsecount="12" type="cond" truecount="12"/>
+            <line num="60" count="12" type="stmt"/>
+            <line num="61" count="12" type="stmt"/>
+            <line num="63" count="0" visibility="public" complexity="3" type="method" signature="invoke(Class&lt;T&gt;,String,Object) : T"/>
+            <line num="65" count="0" type="stmt"/>
+            <line num="66" count="0" type="stmt"/>
+            <line num="66" falsecount="0" type="cond" truecount="0"/>
+            <line num="67" count="0" type="stmt"/>
+            <line num="68" count="0" type="stmt"/>
+            <line num="71" count="0" visibility="public" complexity="3" type="method" signature="invoke(String,Object) : Object"/>
+            <line num="74" count="0" type="stmt"/>
+            <line num="75" count="0" type="stmt"/>
+            <line num="75" falsecount="0" type="cond" truecount="0"/>
+            <line num="77" count="0" type="stmt"/>
+            <line num="78" count="0" type="stmt"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="81" count="0" type="stmt"/>
+            <line num="81" falsecount="0" type="cond" truecount="0"/>
+            <line num="82" count="0" type="stmt"/>
+            <line num="83" count="0" type="stmt"/>
+            <line num="85" count="0" visibility="public" complexity="2" type="method" signature="invoke_onSuperClass(String,Object) : Object"/>
+            <line num="87" count="0" type="stmt"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="88" falsecount="0" type="cond" truecount="0"/>
+            <line num="90" count="0" type="stmt"/>
+            <line num="91" count="0" type="stmt"/>
+            <line num="93" count="0" type="stmt"/>
+            <line num="96" count="33" visibility="public" complexity="3" type="method" signature="method(String,Class&lt;?&gt;) : Method"/>
+            <line num="99" count="33" type="stmt"/>
+            <line num="100" count="33" type="stmt"/>
+            <line num="100" falsecount="12" type="cond" truecount="21"/>
+            <line num="101" count="21" type="stmt"/>
+            <line num="102" count="12" type="stmt"/>
+            <line num="103" count="42" type="stmt"/>
+            <line num="103" falsecount="30" type="cond" truecount="12"/>
+            <line num="104" count="12" type="stmt"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="107" count="12" visibility="public" complexity="1" type="method" signature="methods() : List&lt;Method&gt;"/>
+            <line num="109" count="12" type="stmt"/>
+            <line num="111" count="12" visibility="public" complexity="2" type="method" signature="methods(Class&lt;?&gt;) : List&lt;Method&gt;"/>
+            <line num="113" count="12" type="stmt"/>
+            <line num="114" count="12" type="stmt"/>
+            <line num="115" count="156" type="stmt"/>
+            <line num="117" count="12" type="stmt"/>
+            <line num="117" falsecount="0" type="cond" truecount="12"/>
+            <line num="121" count="0" visibility="public" complexity="1" type="method" signature="methods_Names() : List&lt;String&gt;"/>
+            <line num="123" count="0" type="stmt"/>
+            <line num="125" count="0" visibility="public" complexity="2" type="method" signature="methods_Names(boolean) : List&lt;String&gt;"/>
+            <line num="127" count="0" type="stmt"/>
+            <line num="127" falsecount="0" type="cond" truecount="0"/>
+            <line num="129" count="0" visibility="public" complexity="1" type="method" signature="methods_Names(Class&lt;?&gt;) : List&lt;String&gt;"/>
+            <line num="131" count="0" type="stmt"/>
+            <line num="133" count="0" visibility="public" complexity="1" type="method" signature="names(List&lt;Method&gt;) : List&lt;String&gt;"/>
+            <line num="135" count="0" type="stmt"/>
+            <line num="136" count="0" type="stmt"/>
+            <line num="137" count="0" type="stmt"/>
+            <line num="138" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="tm.lang">
+         <metrics classes="3" methods="23" conditionals="12" files="2" ncloc="177" coveredstatements="24" coveredmethods="14" complexity="34" coveredconditionals="3" statements="62" loc="204" coveredelements="41" elements="97"/>
+         <file name="Reflection.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/main/java/tm/lang/Reflection.java">
+            <metrics classes="2" methods="19" conditionals="12" ncloc="155" coveredstatements="20" coveredmethods="10" complexity="30" coveredconditionals="3" statements="58" loc="178" coveredelements="33" elements="89"/>
+            <class name="Reflection">
+               <metrics methods="17" conditionals="12" coveredstatements="16" coveredmethods="8" complexity="27" coveredconditionals="3" statements="52" coveredelements="27" elements="81"/>
+            </class>
+            <class name="Reflection.Comparator_FieldToStringValue">
+               <metrics methods="2" conditionals="0" coveredstatements="4" coveredmethods="2" complexity="3" coveredconditionals="0" statements="6" coveredelements="6" elements="8"/>
+            </class>
+            <line num="20" count="168" visibility="public" complexity="1" type="method" signature="Reflection(Object)"/>
+            <line num="22" count="168" type="stmt"/>
+            <line num="25" count="180" visibility="public" complexity="1" type="method" signature="Reflection(Object,Class&lt;?&gt;)"/>
+            <line num="27" count="180" type="stmt"/>
+            <line num="28" count="180" type="stmt"/>
+            <line num="29" count="180" type="stmt"/>
+            <line num="32" count="0" visibility="public" complexity="1" type="method" signature="reflection(Object) : Reflection"/>
+            <line num="34" count="0" type="stmt"/>
+            <line num="35" count="0" type="stmt"/>
+            <line num="38" count="33" visibility="public" complexity="1" type="method" signature="method(String) : Method"/>
+            <line num="40" count="33" type="stmt"/>
+            <line num="44" count="144" visibility="public" complexity="3" type="method" signature="field(String) : Field"/>
+            <line num="47" count="144" type="stmt"/>
+            <line num="49" count="144" type="stmt"/>
+            <line num="51" count="0" type="stmt"/>
+            <line num="52" count="144" type="stmt"/>
+            <line num="53" count="144" type="stmt"/>
+            <line num="55" count="144" visibility="public" complexity="1" type="method" signature="field_Value(String) : Object"/>
+            <line num="57" count="144" type="stmt"/>
+            <line num="59" count="0" visibility="public" complexity="2" type="method" signature="field_Value(String,Class&lt;T&gt;) : T"/>
+            <line num="61" count="0" type="stmt"/>
+            <line num="62" count="0" type="stmt"/>
+            <line num="62" falsecount="0" type="cond" truecount="0"/>
+            <line num="63" count="0" type="stmt"/>
+            <line num="64" count="0" type="stmt"/>
+            <line num="66" count="144" visibility="public" complexity="4" type="method" signature="field_Value(Field) : Object"/>
+            <line num="68" count="144" type="stmt"/>
+            <line num="68" falsecount="144" type="cond" truecount="0"/>
+            <line num="70" count="0" type="stmt"/>
+            <line num="71" count="0" type="stmt"/>
+            <line num="73" count="0" type="stmt"/>
+            <line num="77" count="0" type="stmt"/>
+            <line num="80" count="0" type="stmt"/>
+            <line num="83" count="144" type="stmt"/>
+            <line num="85" count="0" visibility="public" complexity="1" type="method" signature="fields() : List&lt;Field&gt;"/>
+            <line num="87" count="0" type="stmt"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="90" count="0" visibility="public" complexity="1" type="method" signature="fields_Values() : List&lt;Object&gt;"/>
+            <line num="92" count="0" type="stmt"/>
+            <line num="94" count="0" visibility="public" complexity="1" type="method" signature="fields_Values(List&lt;Field&gt;) : List&lt;Object&gt;"/>
+            <line num="96" count="0" type="stmt"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="98" count="0" type="stmt"/>
+            <line num="99" count="0" type="stmt"/>
+            <line num="102" count="0" visibility="public" complexity="1" type="method" signature="fields_Names() : List&lt;String&gt;"/>
+            <line num="104" count="0" type="stmt"/>
+            <line num="105" count="0" type="stmt"/>
+            <line num="106" count="0" type="stmt"/>
+            <line num="107" count="0" type="stmt"/>
+            <line num="110" count="0" visibility="public" complexity="2" type="method" signature="getters_Names() : List&lt;String&gt;"/>
+            <line num="112" count="0" type="stmt"/>
+            <line num="113" count="0" type="stmt"/>
+            <line num="114" count="0" type="stmt"/>
+            <line num="114" falsecount="0" type="cond" truecount="0"/>
+            <line num="115" count="0" type="stmt"/>
+            <line num="116" count="0" type="stmt"/>
+            <line num="118" count="0" visibility="public" complexity="3" type="method" signature="getters_Values() : List&lt;String&gt;"/>
+            <line num="120" count="0" type="stmt"/>
+            <line num="121" count="0" type="stmt"/>
+            <line num="122" count="0" type="stmt"/>
+            <line num="122" falsecount="0" type="cond" truecount="0"/>
+            <line num="124" count="0" type="stmt"/>
+            <line num="125" count="0" type="stmt"/>
+            <line num="125" falsecount="0" type="cond" truecount="0"/>
+            <line num="127" count="0" type="stmt"/>
+            <line num="133" count="0" visibility="public" complexity="1" type="method" signature="sort(List&lt;String&gt;) : List&lt;String&gt;"/>
+            <line num="135" count="0" type="stmt"/>
+            <line num="136" count="0" type="stmt"/>
+            <line num="139" count="12" visibility="public" complexity="1" type="method" signature="sort_by_Name(List&lt;T&gt;) : List&lt;T&gt;"/>
+            <line num="142" count="12" type="stmt"/>
+            <line num="143" count="12" type="stmt"/>
+            <line num="146" count="24" visibility="public" complexity="2" type="method" signature="superClass() : Reflection"/>
+            <line num="148" count="24" type="stmt"/>
+            <line num="149" count="24" type="stmt"/>
+            <line num="149" falsecount="12" type="cond" truecount="12"/>
+            <line num="159" count="12" visibility="public" complexity="1" type="method" signature="Comparator_FieldToStringValue(String)"/>
+            <line num="161" count="12" type="stmt"/>
+            <line num="164" count="144" visibility="public" complexity="2" type="method" signature="compare(T,T) : int"/>
+            <line num="166" count="144" type="stmt"/>
+            <line num="168" count="144" type="stmt"/>
+            <line num="169" count="0" type="stmt"/>
+            <line num="170" count="0" type="stmt"/>
+            <line num="174" count="144" type="stmt"/>
+         </file>
+         <file name="TestObject.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/main/java/tm/lang/TestObject.java">
+            <metrics classes="1" methods="4" conditionals="0" ncloc="22" coveredstatements="4" coveredmethods="4" complexity="4" coveredconditionals="0" statements="4" loc="26" coveredelements="8" elements="8"/>
+            <class name="TestObject">
+               <metrics methods="4" conditionals="0" coveredstatements="4" coveredmethods="4" complexity="4" coveredconditionals="0" statements="4" coveredelements="8" elements="8"/>
+            </class>
+            <line num="8" count="3" visibility="public" complexity="1" type="method" signature="instance_Method() : String"/>
+            <line num="10" count="3" type="stmt"/>
+            <line num="13" count="3" visibility="public" complexity="1" type="method" signature="instance_Echo(String) : String"/>
+            <line num="15" count="3" type="stmt"/>
+            <line num="17" count="3" visibility="public" complexity="1" type="method" signature="static_Method() : String"/>
+            <line num="19" count="3" type="stmt"/>
+            <line num="22" count="3" visibility="public" complexity="1" type="method" signature="static_Echo(String) : String"/>
+            <line num="24" count="3" type="stmt"/>
+         </file>
+      </package>
+   </project>
+   <testproject timestamp="1400296835820" name="org.fluent.java.lang 0.9.1-SNAPSHOT">
+      <metrics conditionals="0" methods="11" classes="3" files="3" packages="2" coveredstatements="63" complexity="13" loc="176" ncloc="143" coveredmethods="10" coveredconditionals="0" statements="68" coveredelements="73" elements="79"/>
+      <package name="tm.lang.reflect">
+         <metrics classes="1" methods="1" conditionals="0" files="1" ncloc="15" coveredstatements="0" coveredmethods="0" complexity="1" coveredconditionals="0" statements="3" loc="20" coveredelements="0" elements="4"/>
+         <file name="Methods_Test.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/test/java/tm/lang/reflect/Methods_Test.java">
+            <metrics classes="1" methods="1" conditionals="0" ncloc="15" coveredstatements="0" coveredmethods="0" complexity="1" coveredconditionals="0" statements="3" loc="20" coveredelements="0" elements="4"/>
+            <class name="Methods_Test">
+               <metrics methods="1" conditionals="0" coveredstatements="0" coveredmethods="0" complexity="1" coveredconditionals="0" statements="3" coveredelements="0" elements="4"/>
+            </class>
+            <line num="12" count="0" visibility="public" complexity="1" type="method" signature="Methods_Test()"/>
+            <line num="14" count="0" type="stmt"/>
+            <line num="15" count="0" type="stmt"/>
+            <line num="16" count="0" type="stmt"/>
+         </file>
+      </package>
+      <package name="tm.lang">
+         <metrics classes="2" methods="10" conditionals="0" files="2" ncloc="128" coveredstatements="63" coveredmethods="10" complexity="12" coveredconditionals="0" statements="65" loc="156" coveredelements="73" elements="75"/>
+         <file name="Method_Test.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/test/java/tm/lang/Method_Test.java">
+            <metrics classes="1" methods="8" conditionals="0" ncloc="102" coveredstatements="53" coveredmethods="8" complexity="10" coveredconditionals="0" statements="55" loc="125" coveredelements="61" elements="63"/>
+            <class name="Method_Test">
+               <metrics conditionals="0" methods="8" coveredstatements="53" complexity="10" testpasses="21" testruns="21" coveredmethods="8" coveredconditionals="0" statements="55" testfailures="0" coveredelements="61" testduration="1.257" elements="63"/>
+            </class>
+            <line num="16" count="21" visibility="public" complexity="1" type="method" signature="Method_Test()"/>
+            <line num="18" count="21" type="stmt"/>
+            <line num="19" count="21" type="stmt"/>
+            <line num="22" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.0" signature="Method_Ctor() : void"/>
+            <line num="25" count="3" type="stmt"/>
+            <line num="26" count="3" type="stmt"/>
+            <line num="27" count="3" type="stmt"/>
+            <line num="28" count="3" type="stmt"/>
+            <line num="29" count="3" type="stmt"/>
+            <line num="30" count="3" type="stmt"/>
+            <line num="31" count="3" type="stmt"/>
+            <line num="34" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.0" signature="isStatic() : void"/>
+            <line num="37" count="3" type="stmt"/>
+            <line num="38" count="3" type="stmt"/>
+            <line num="39" count="3" type="stmt"/>
+            <line num="41" count="3" type="stmt"/>
+            <line num="42" count="3" type="stmt"/>
+            <line num="43" count="3" type="stmt"/>
+            <line num="45" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.0" signature="isInstance() : void"/>
+            <line num="50" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.27" signature="invoke() : void"/>
+            <line num="53" count="3" type="stmt"/>
+            <line num="55" count="3" type="stmt"/>
+            <line num="56" count="3" type="stmt"/>
+            <line num="58" count="3" type="stmt"/>
+            <line num="59" count="3" type="stmt"/>
+            <line num="60" count="3" type="stmt"/>
+            <line num="61" count="3" type="stmt"/>
+            <line num="64" count="3" type="stmt"/>
+            <line num="65" count="3" type="stmt"/>
+            <line num="67" count="3" type="stmt"/>
+            <line num="68" count="3" type="stmt"/>
+            <line num="69" count="3" type="stmt"/>
+            <line num="70" count="3" type="stmt"/>
+            <line num="73" count="3" type="stmt"/>
+            <line num="74" count="3" type="stmt"/>
+            <line num="75" count="3" type="stmt"/>
+            <line num="76" count="3" type="stmt"/>
+            <line num="79" testsuccess="true" count="3" visibility="public" complexity="3" type="method" testduration="0.125" signature="invoke_No_Catch() : void"/>
+            <line num="83" count="3" type="stmt"/>
+            <line num="85" count="3" type="stmt"/>
+            <line num="86" count="3" type="stmt"/>
+            <line num="87" count="3" type="stmt"/>
+            <line num="88" count="0" type="stmt"/>
+            <line num="92" count="3" type="stmt"/>
+            <line num="94" count="3" type="stmt"/>
+            <line num="95" count="3" type="stmt"/>
+            <line num="96" count="3" type="stmt"/>
+            <line num="97" count="0" type="stmt"/>
+            <line num="102" count="3" type="stmt"/>
+            <line num="105" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.0" signature="name() : void"/>
+            <line num="108" count="3" type="stmt"/>
+            <line num="109" count="3" type="stmt"/>
+            <line num="110" count="3" type="stmt"/>
+            <line num="111" count="3" type="stmt"/>
+            <line num="112" count="3" type="stmt"/>
+            <line num="113" count="3" type="stmt"/>
+            <line num="114" count="3" type="stmt"/>
+            <line num="115" count="3" type="stmt"/>
+            <line num="117" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.021" signature="_toString() : void"/>
+            <line num="120" count="3" type="stmt"/>
+            <line num="121" count="3" type="stmt"/>
+            <line num="122" count="3" type="stmt"/>
+            <line num="123" count="3" type="stmt"/>
+         </file>
+         <file name="Reflection_Test.java" path="/Users/plugin/_Dev/git/org.fluentjava/org.fluent.java.lang/src/test/java/tm/lang/Reflection_Test.java">
+            <metrics classes="1" methods="2" conditionals="0" ncloc="26" coveredstatements="10" coveredmethods="2" complexity="2" coveredconditionals="0" statements="10" loc="31" coveredelements="12" elements="12"/>
+            <class name="Reflection_Test">
+               <metrics conditionals="0" methods="2" coveredstatements="10" complexity="2" testpasses="3" testruns="3" coveredmethods="2" coveredconditionals="0" statements="10" testfailures="0" coveredelements="12" testduration="0.0" elements="12"/>
+            </class>
+            <line num="13" count="3" visibility="public" complexity="1" type="method" signature="Reflection_Test()"/>
+            <line num="15" count="3" type="stmt"/>
+            <line num="16" count="3" type="stmt"/>
+            <line num="19" testsuccess="true" count="3" visibility="public" complexity="1" type="method" testduration="0.0" signature="Reflection_Ctor() : void"/>
+            <line num="22" count="3" type="stmt"/>
+            <line num="23" count="3" type="stmt"/>
+            <line num="24" count="3" type="stmt"/>
+            <line num="25" count="3" type="stmt"/>
+            <line num="26" count="3" type="stmt"/>
+            <line num="27" count="3" type="stmt"/>
+            <line num="28" count="3" type="stmt"/>
+            <line num="29" count="3" type="stmt"/>
+         </file>
+      </package>
+   </testproject>
+</coverage>
