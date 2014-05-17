@@ -6,17 +6,60 @@ import java.util.List;
 
 import tm.lang.Reflection;
 
+/**
+ * Helper class to reflect methods
+ *
+ */
 public class Methods 
 {
 	public Reflection reflection;
 	public boolean	  sortMethodNames;    
 	
+	/**
+	 * Constructor should receive a Reflection object
+	 * 
+	 * @param reflection
+	 */
 	public 	Methods(Reflection reflection)
 	{
 		this.reflection      = reflection;
 		this.sortMethodNames = true;
 	}
 	
+	public List<Method> declared()
+	{
+		List<Method> methods = new ArrayList<Method>();
+		for(java.lang.reflect.Method method_Obj : reflection.clazz.getDeclaredMethods())
+			methods.add(new Method(reflection, method_Obj));
+		return (this.sortMethodNames)
+					? reflection.sort_by_Name(methods)
+					: methods;
+	}
+	public Method declared(String methodName,Class<?> ... parameters)
+	{
+		try  
+		{
+			java.lang.reflect.Method method_Obj = reflection.clazz.getDeclaredMethod(methodName,parameters);
+			if (method_Obj != null)
+				return 	new Method(reflection, method_Obj);		
+		}
+		catch (NoSuchMethodException 	 e)  { }
+		return null;
+	}
+	///Recursive Search for method	
+	public Method declared_All(String methodName,Class<?> ... parameters )
+	{
+		if(reflection == null)
+			return null;
+		Method method = this.declared(methodName, parameters);
+		if(method != null)
+			return method;
+				
+		Reflection superClass = reflection.superClass();
+		if (superClass!= null)
+			return superClass.methods.declared_All(methodName, parameters);
+		return null;
+	}
 	public <T> T invoke(Class<T> returnType, String methodName, Object ...parameters )
 	{
 		Object returnValue = invoke(methodName, parameters);
@@ -24,6 +67,7 @@ public class Methods
 			return returnType.cast(returnValue);
 		return null;
 	}
+
 	public Object invoke(String methodName, Object ...parameters )
 	{
 		
@@ -48,6 +92,7 @@ public class Methods
 		}	
 		return null;
 	}
+	
 	public Method method(String methodName,Class<?> ... parameters )
 	{
 		//first try full match on all declared methods (with parameters)
@@ -59,37 +104,10 @@ public class Methods
 				return method;
 		return null;
 	}
-
-	///Recursive Search for method	
-	public Method declared_All(String methodName,Class<?> ... parameters )
-	{
-		if(reflection == null)
-			return null;
-		Method method = this.declared(methodName, parameters);
-		if(method != null)
-			return method;
-				
-		Reflection superClass = reflection.superClass();
-		if (superClass!= null)
-			return superClass.methods.declared_All(methodName, parameters);
-		return null;
-	}
-	public Method declared(String methodName,Class<?> ... parameters)
-	{
-		try  
-		{
-			java.lang.reflect.Method method_Obj = reflection.clazz.getDeclaredMethod(methodName,parameters);
-			if (method_Obj != null)
-				return 	new Method(reflection, method_Obj);		
-		}
-		catch (NoSuchMethodException 	 e)  { }
-		return null;
-	}
-	
 	public List<Method> methods()
 	{
 		return methods(reflection.clazz);
-	}
+	}	
 	public List<Method> methods(Class<?> targetClass)
 	{
 		List<Method> methods = new ArrayList<Method>();
@@ -99,18 +117,18 @@ public class Methods
 		return (this.sortMethodNames)
 					? reflection.sort_by_Name(methods)
 					: methods;
-	}	
+	}
 	public List<String> methods_Names()
 	{
 		return methods_Names(false);
 	}
-	public List<String> methods_Names(Class<?> targetClass)
-	{
-		return names(methods(targetClass));
-	}
 	public List<String> methods_Names(boolean onlyShowDeclared)
 	{
 		return names(onlyShowDeclared ? declared() : methods());
+	}
+	public List<String> methods_Names(Class<?> targetClass)
+	{
+		return names(methods(targetClass));
 	}
 	public List<String> names(List<Method> methods)
 	{
@@ -118,14 +136,5 @@ public class Methods
 		for(Method method : methods)			
 			names.add(method.name());
 		return names;
-	}
-	public List<Method> declared()
-	{
-		List<Method> methods = new ArrayList<Method>();
-		for(java.lang.reflect.Method method_Obj : reflection.clazz.getDeclaredMethods())
-			methods.add(new Method(reflection, method_Obj));
-		return (this.sortMethodNames)
-					? reflection.sort_by_Name(methods)
-					: methods;
 	}	
 }

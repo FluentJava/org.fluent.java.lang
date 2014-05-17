@@ -1,26 +1,95 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.fluent.java.lang</groupId>
-  <artifactId>org.fluent.java.lang</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <build>    
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  <dependencies>
-  	<dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<version>4.11</version>
-  		<scope>test</scope>
-  	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.fluent.java.lang</groupId>
+	<artifactId>org.fluent.java.lang</artifactId>
+	<version>0.9.1-SNAPSHOT</version>
+	<name>org.fluent.java.lang</name>
+	<url>http://github.com/teammentor</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <!-- so that build is not platform dependent -->
+
+		<!-- github site publish settings -->
+		<scmPublish.checkoutDirectory>${project.build.directory}/github-pages</scmPublish.checkoutDirectory>
+		<scm-publish.siteDocOuputDirectory>${project.reporting.outputDirectory}</scm-publish.siteDocOuputDirectory>
+		<plugin.scm-publish.version>1.0</plugin.scm-publish.version>
+		<scm-publish.scmBranch>gh-pages</scm-publish.scmBranch>
+		<scm-publish.pubScmUrl>scm:git:git@github.com:FluentJava/org.fluent.java.lang.git</scm-publish.pubScmUrl>
+	</properties>
+
+	<!-- build -->
+	<build>
+
+		<!-- to publish into github pages -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-scm-publish-plugin</artifactId>
+					<version>${plugin.scm-publish.version}</version>
+					<inherited>true</inherited>
+					<configuration>
+						<checkoutDirectory>${scmPublish.checkoutDirectory}</checkoutDirectory>
+						<checkinComment>Publishing Site Docs for ${project.artifactId}:${project.version} </checkinComment>						
+						<content>${scm-publish.siteDocOuputDirectory}</content>
+						<skipDeletedFiles>true</skipDeletedFiles>
+						<pubScmUrl>${scm-publish.pubScmUrl}</pubScmUrl>
+						<scmBranch>${scm-publish.scmBranch}</scmBranch>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<!-- java compilation -->
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+
+	</build>
+	<!-- reporting (site) -->
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<stylesheetfile>${basedir}/src/maven/stylesheet_jdk7.css</stylesheetfile>
+					<notimestamp>true</notimestamp>
+					<linksource>true</linksource>
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>javadoc</report>
+							<report>test-javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+
+			</plugin>
+		</plugins>
+	</reporting>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<description>org.fluent.java.lang APIS</description>
 </project>
