@@ -2,6 +2,8 @@ package tm.lang.reflect;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
+
 import org.junit.Test;
 
 import tm.lang.Reflection;
@@ -26,5 +28,14 @@ public class Methods_Test
 		assertNotNull(reflection);
 		assertEquals (reflection.target, testObject);
 		assertEquals (reflection, methods.reflection);
+	}
+	
+	@Test 
+	public void declared()
+	{
+		List<Method> declared = methods.declared();
+		assertNotNull(declared);
+		assertEquals (declared.size() , 4);
+		//assert
 	}
 }
